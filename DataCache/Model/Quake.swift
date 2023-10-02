@@ -124,3 +124,6 @@ extension Quake {
         (try? modelContext.fetchCount(FetchDescriptor<Quake>())) ?? 0
     }
 }
+
+// Ensure that the model's conformance to Identifiable is public.
+extension Quake: Identifiable {}
